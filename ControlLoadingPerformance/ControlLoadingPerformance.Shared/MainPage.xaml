@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="ControlLoadingPerformance.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ControlLoadingPerformance"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <NavigationView
+            ItemInvoked="NavigationView_OnItemInvoked"
+            x:Name="navigationView" AlwaysShowHeader="True">
+            <NavigationView.MenuItems>
+                <NavigationViewItem  Content="Page 1" Tag="PageToNav1" >
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE1D6;" FontFamily="Segoe UI Symbol"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem  Content="Page 2" Tag="PageToNav2" >
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE181;" FontFamily="Segoe UI Symbol"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem  Content="Page 3" Tag="PageToNav3" >
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE200;" FontFamily="Segoe UI Symbol" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+            </NavigationView.MenuItems>
+
+            <Grid>
+                <Frame x:Name="ContentFrame"
+                       NavigationFailed="ContentFrame_OnNavigationFailed"></Frame>
+            </Grid>
+        </NavigationView>
+    </Grid>
+</Page>
