@@ -28,7 +28,7 @@ namespace ControlLoadingPerformance.Shared.Views
         public PageWith128()
         {
             this.InitializeComponent();
-            viewModel = new ControlRendererViewModel(16);
+            viewModel = new ControlRendererViewModel(128);
             DataContext = viewModel;
         }
 
