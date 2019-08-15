@@ -39,6 +39,7 @@ namespace ControlLoadingPerformance
                 case "Page 1": return typeof(PageWith1);
                 case "Page 2": return typeof(PageWith16);
                 case "Page 3": return typeof(PageWith64);
+                case "Page 4": return typeof(PageWith128);
                 default: return null;
             }
         }

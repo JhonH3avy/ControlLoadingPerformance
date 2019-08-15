@@ -27,6 +27,11 @@
                         <FontIcon Glyph="&#xE200;" FontFamily="Segoe UI Symbol" />
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
+                <NavigationViewItem  Content="Page 4" Tag="PageToNav4" >
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE200;" FontFamily="Segoe UI Symbol" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
             </NavigationView.MenuItems>
 
             <Grid>

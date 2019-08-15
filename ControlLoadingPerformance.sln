@@ -7,11 +7,12 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ControlLoadingPerformance.S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlLoadingPerformance.UWP", "ControlLoadingPerformance\ControlLoadingPerformance.UWP\ControlLoadingPerformance.UWP.csproj", "{E413A499-DF54-4059-A412-79BF59B58AAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlLoadingPerformance.Wasm", "ControlLoadingPerformance\ControlLoadingPerformance.Wasm\ControlLoadingPerformance.Wasm.csproj", "{F93AC8E7-60F6-4031-88D7-86A110F70CA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlLoadingPerformance.Wasm", "ControlLoadingPerformance\ControlLoadingPerformance.Wasm\ControlLoadingPerformance.Wasm.csproj", "{F93AC8E7-60F6-4031-88D7-86A110F70CA6}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		ControlLoadingPerformance\ControlLoadingPerformance.Shared\ControlLoadingPerformance.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
+		ControlLoadingPerformance\ControlLoadingPerformance.Shared\ControlLoadingPerformance.Shared.projitems*{e413a499-df54-4059-a412-79bf59b58aad}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
