@@ -20,12 +20,29 @@
   </Page.Resources>
 
 
-    <ListView ItemsSource="{Binding Reports}" ItemTemplate="{StaticResource dataTemplate}"
+    <ListView ItemsSource="{Binding Reports}"
               Grid.Column="1">
         <ListView.ItemsPanel>
             <ItemsPanelTemplate>
                 <controls:WrapPanel Orientation="Horizontal"/>
             </ItemsPanelTemplate>
         </ListView.ItemsPanel>
+        <ListView.ItemContainerStyle>
+            <Style TargetType="ListViewItem">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="ListViewItem">
+                            <!--<ListViewItemPresenter SelectionCheckMarkVisualEnabled="False" SelectedBackground="Orange"/>-->
+                            <!--<ContentPresenter Content="{TemplateBinding Content}"></ContentPresenter>-->
+                            <Button Click="ButtonClick" Tag="{Binding Key}" Margin="5" Height="50" Width="250">
+                                <Button.Content>
+                                    <TextBlock Text="{Binding Name}" TextWrapping="Wrap"/>
+                                </Button.Content>
+                            </Button>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ListView.ItemContainerStyle>
     </ListView>
 </Page>
